@@ -23,11 +23,7 @@ app.use('/', Router);
 
 const PORT = process.env.PORT || 8000;
 
-
-const username = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
-
-const URL = process.env.MONGODB_URI || `mongodb+srv://${username}:${password}@cluster0.aor8a.mongodb.net/?retryWrites=true&w=majority`;
+const URL = process.env.DATABASE;
 
 Connection(URL);
 
